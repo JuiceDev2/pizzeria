@@ -78,7 +78,13 @@ export type OrderCardData = Pick<
   Order,
   "id" | "status" | "created_at" | "total"
 > & {
-  order_items: Pick<OrderItem, "id" | "qty" | "size" | "style" | "orilla_queso">[];
+  order_items: (Pick<
+    OrderItem,
+    "id" | "qty" | "size" | "style" | "orilla_queso"
+  > & {
+    products: Pick<Product, "name"> | null;
+    flavors: Pick<Flavor, "name"> | null;
+  })[];
 };
 
 export type IngredientStockRow = Pick<

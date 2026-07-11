@@ -102,7 +102,10 @@ export function KitchenBoard({
             <ul className="text-sm text-neutral-300 space-y-1 mb-3">
               {order.order_items.map((item) => (
                 <li key={item.id}>
-                  {item.qty}x {item.size ?? ""} {item.style ?? ""}
+                  {item.qty}x {item.products?.name ?? "Producto"}
+                  {item.flavors?.name ? ` — ${item.flavors.name}` : ""}
+                  {item.size ? ` (${item.size})` : ""}
+                  {item.style ? ` ${item.style}` : ""}
                   {item.orilla_queso ? " + orilla de queso" : ""}
                 </li>
               ))}
