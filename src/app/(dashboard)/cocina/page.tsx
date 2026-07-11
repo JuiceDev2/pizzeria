@@ -15,5 +15,5 @@ export default async function CocinaPage() {
     .eq("status", "pendiente")
     .order("created_at", { ascending: true });
 
-  return <KitchenBoard initialOrders={(orders ?? []) as OrderCardData[]} />;
+  return <KitchenBoard initialOrders={(orders ?? []) as unknown as OrderCardData[]} />;
 }
