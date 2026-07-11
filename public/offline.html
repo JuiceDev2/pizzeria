@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sin conexión — Pizzería</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 12px;
+        font-family: system-ui, -apple-system, sans-serif;
+        background: #fafaf9;
+        color: #1c1917;
+        text-align: center;
+        padding: 24px;
+      }
+      .emoji { font-size: 48px; }
+      h1 { font-size: 18px; margin: 0; }
+      p { font-size: 14px; color: #78716c; margin: 0; max-width: 320px; }
+      button {
+        margin-top: 8px;
+        background: #7a3b1e;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="emoji">🍕📡</div>
+    <h1>Sin conexión</h1>
+    <p>No se pudo cargar esta página. Revisa tu internet e intenta de nuevo.</p>
+    <button onclick="location.reload()">Reintentar</button>
+  </body>
+</html>
