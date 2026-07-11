@@ -82,8 +82,8 @@ export type OrderCardData = Pick<
     OrderItem,
     "id" | "qty" | "size" | "style" | "orilla_queso"
   > & {
-    products: Pick<Product, "name"> | null;
-    flavors: Pick<Flavor, "name"> | null;
+    products: Pick<Product, "name">[];
+    flavors: Pick<Flavor, "name">[];
   })[];
 };
 
