@@ -19,6 +19,7 @@ export default async function PropietarioLayout({
           { href: "/propietario/produccion", label: "Control de producción" },
           { href: "/propietario/catalogo", label: "Catálogo" },
           { href: "/propietario/historial", label: "Historial" },
+          { href: "/propietario/tickets", label: "Tickets" },
           { href: "/propietario/usuarios", label: "Empleados" },
         ]}
       />

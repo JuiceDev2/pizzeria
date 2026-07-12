@@ -13,7 +13,10 @@ export default async function MeseroLayout({
       <NavBar
         name={profile.name}
         role="Mesero"
-        links={[{ href: "/mesero", label: "Nueva orden" }]}
+        links={[
+          { href: "/mesero", label: "Nueva orden" },
+          { href: "/mesero/tickets", label: "Tickets" },
+        ]}
       />
       <main className="max-w-6xl mx-auto px-4 py-6">{children}</main>
     </div>

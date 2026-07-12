@@ -17,6 +17,7 @@ export default async function SupervisorLayout({
         links={[
           { href: "/supervisor", label: "Seguimiento de pedidos" },
           { href: "/cocina", label: "Ver cocina" },
+          { href: "/supervisor/tickets", label: "Tickets" },
         ]}
       />
       <main className="max-w-6xl mx-auto px-4 py-6">{children}</main>

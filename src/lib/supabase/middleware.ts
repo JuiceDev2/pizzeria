@@ -42,7 +42,8 @@ export async function updateSession(request: NextRequest) {
     request.nextUrl.pathname === "/manifest.json" ||
     request.nextUrl.pathname === "/sw.js" ||
     request.nextUrl.pathname === "/offline.html" ||
-    request.nextUrl.pathname.startsWith("/icons/");
+    request.nextUrl.pathname.startsWith("/icons/") ||
+    request.nextUrl.pathname.startsWith("/ticket/");
 
   if (!user && !isAuthRoute && !isPublicAsset) {
     const url = request.nextUrl.clone();
