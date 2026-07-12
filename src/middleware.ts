@@ -10,8 +10,9 @@ export const config = {
     /*
      * Corre en todas las rutas excepto:
      * - _next/static, _next/image (assets internos de Next)
+     * - archivos PWA públicos (manifest, service worker, offline, íconos)
      * - archivos estáticos comunes (svg, png, jpg, etc.)
      */
-    "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
+    "/((?!_next/static|_next/image|favicon.ico|manifest.json|sw.js|offline.html|icons/|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
   ],
 };
